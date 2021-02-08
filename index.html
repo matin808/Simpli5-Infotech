@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+   
+<div class="header">
+    <div class="header__logo">
+        <img class = "logo" src="./images/logo.png" alt="">
+    </div>
+    <div class="header__links">
+        <ul class = "nav_links">
+            <li class = "nav_link">
+           <a  class = "nav_anc" href="#">Home</a>
+            </li>
+    
+            <li class = "nav_link">
+           <a  class = "nav_anc" href="#">Porfolio</a>
+            </li>
+    
+            <li class = "nav_link">
+            <a class = "nav_anc"  href="#">Contact</a>
+            </li>
+    
+            <li class = "nav_link">
+             <a  class = "nav_anc" href="#">About Us</a>
+            </li>
+        </ul>
+    </div>
+   
+</div>
+
+<div class="main">
+    <div class="main__left">
+        <p class = "main_left_para">Our Products</p>
+        <h1 class = "main_left_heading">Simpli5 infotech</h1>
+        <p class = "main_left_desc">In your service since your past 5 years, get us as soon as you understand us.</p>
+   
+    </div>
+
+    <div class="main__right">
+        <img class = "main_image" src="./images/bike.jpg" alt="">
+        <div class="main_btns">
+            <button onclick="changeImage('./images/bike.jpg')" class = "main_btn1">01</button>
+            <button onclick="changeImage('./images/bike1.jpg')"  class = "main_btn2">02</button>
+            <button onclick="changeImage('./images/bike2.jpg')"  class = "main_btn3">03</button>
+            <button onclick="changeImage('./images/bike3.jpg')"  class = "main_btn4">04</button>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+function changeImage(bikes){
+    document.querySelector('.main_image').src = bikes;
+}
+ 
+</script>
+
+</body>
+</html>
